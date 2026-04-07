@@ -7,7 +7,6 @@
 int main()
 {
     Data* initptr = nullptr;
-    //头写入=======
     MiddleIntoLinkList(initptr,1,2);
     MiddleIntoLinkList(initptr,1,3);
     MiddleIntoLinkList(initptr,1,4);
@@ -18,6 +17,6 @@ int main()
     DeleteTheMiddleLinkeList(initptr,2);
     DeleteTheMiddleLinkeList(initptr,1);
     LinkListPrint(initptr);
-    //插入写法=======
+    QueryValuesAsLinkedList(initptr,2);
     std::cin.get();
 }

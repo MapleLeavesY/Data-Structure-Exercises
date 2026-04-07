@@ -54,3 +54,15 @@ void DeleteTheMiddleLinkeList(Data*& Initptr, int Pos)
     temp->link = temp01->link;
     delete temp01;
 }
+void ModifyValuesAsLinkedList(Data* Initptr, int Pos, int data)
+{
+    if(Pos < 1) return;
+    Data* temp = Initptr;
+    for(int i = 0; i < Pos - 1 && temp != nullptr; i++)
+    {
+        if(temp == nullptr) return;
+        temp = temp->link;
+    }
+    if(temp == nullptr) return;
+    temp->data = data;
+}
