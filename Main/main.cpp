@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Insert.h"
 #include "MoveOut.h"
-
-
+#include "Data.h"
+#include "Reverse.h"
 
 int main()
 {
@@ -18,5 +18,9 @@ int main()
     DeleteTheMiddleLinkeList(initptr,1);
     LinkListPrint(initptr);
     QueryValuesAsLinkedList(initptr,2);
+    RecursiveImplementationOfLinkedListReversal(initptr,initptr);
+    LinkListPrint(initptr);
+    IterativeImplementationOfLinkedListReversal(initptr);
+    LinkListPrint(initptr);
     std::cin.get();
 }

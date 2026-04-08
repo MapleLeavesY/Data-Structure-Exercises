@@ -8,9 +8,11 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
+				"${workspaceFolder}/Arc/Data.cpp",
 				"${workspaceFolder}/Main/main.cpp",
 				"${workspaceFolder}/Arc/Insert.cpp",
 				"${workspaceFolder}/Arc/MoveOut.cpp",
+				"${workspaceFolder}/Arc/Reverse.cpp",
 				"-I", "${workspaceFolder}/Inc",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
